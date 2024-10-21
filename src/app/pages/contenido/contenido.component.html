@@ -1,0 +1,16 @@
+<div class="container">
+    <h1 class="title">Cursos Online</h1>
+
+    <div class="course-container">
+        <div *ngFor="let course of courses" class="course" [attr.data-name]="course.id">
+            <img [src]="course.imageUrl" alt="{{ course.title }}">
+            <h3>{{ course.title }}</h3>
+            <p><span class="info">Profesor:</span> {{ course.profesor }}</p>
+            <p><span class="info">Fecha de inicio:</span> {{ course.date }}</p>
+            <p><span class="info">Duración: </span> {{ course.duration }} meses</p>
+            <button class="buttons" (click)="masInformacion({id: course.id, title: course.title, profesor: course.profesor, date: course.date, duration: course.duration, description: course.description, imageUrl: course.imageUrl})"> Más información </button>
+            <app-preview-course *ngIf="cursoSeleccionado" [cursoSeleccionado]="cursoSeleccionado" (cerrar)="cerrarPreview()"></app-preview-course>
+        </div>
+    </div>
+</div>
+

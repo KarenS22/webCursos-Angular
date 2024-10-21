@@ -1,0 +1,25 @@
+<div *ngIf="cursoSeleccionado && cursoSeleccionado.title">
+    <div class="course-preview" style="display: flex;">
+        <div class="preview active" [attr.data-target]="cursoSeleccionado.id">
+            <i class="fa fa-times" (click)="cerrarPreview()">X</i>
+            <img [src]="cursoSeleccionado.imageUrl" alt="{{ cursoSeleccionado.title }}">
+            <h2>{{ cursoSeleccionado.title }}</h2>
+            
+                <div class="preview-content">
+                    <div class="div1">
+                         <img [src]="datos?.picture?.large" alt="Foto del profesor">
+                    </div>
+                    <p class="div2"><strong>Profesor:</strong> {{ cursoSeleccionado.profesor }}</p>
+                    <p class="div3"><strong>Fecha:</strong> {{ cursoSeleccionado.date | date }}</p>
+                    <p class="div4"><strong>Duración:</strong> {{ cursoSeleccionado.duration }} Meses</p>
+                </div>
+
+            <p><strong>Descripción:</strong> {{ cursoSeleccionado.description }}</p>
+
+            <p class="buttons"> <i class="fa-solid fa-user-plus"></i>Registrarse</p>
+
+
+        </div>
+    </div>
+
+</div>

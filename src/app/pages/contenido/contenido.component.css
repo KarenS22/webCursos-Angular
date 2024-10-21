@@ -1,0 +1,96 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+}
+
+.title {
+    font-size: 3.5rem;
+    color: #444;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.container .course-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1rem;
+}
+
+.container .course-container .course {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    outline: .1rem solid #ccc;
+    outline-offset: -1.5rem;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+
+.container .course-container .course p {
+    font-size: 1rem;
+}
+
+.container .course-container .course img {
+    height: 175px;
+}
+
+
+.container .course-container .course:hover {
+    outline: .2rem solid #8fd1ae;
+    outline-offset: 0;
+}
+
+.container .course-container .course:hover img {
+    transform: scale(.9);
+}
+
+
+.container .course-container .course:hover h3 {
+    color: #8fd1ae;
+}
+
+
+h3 {
+    padding: .5rem 0;
+    font-size: 2rem;
+    color: #444;
+}
+
+
+.buttons {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #8fd1ae;
+    width: 130px;
+    border-radius: 15px;
+    margin: auto;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 5px;
+    padding: 3px 3px;
+}
+
+.buttons:hover{
+    background: #fff;
+    color:  #1e8449;
+    border: 0.01rem solid #8fd1ae;
+}
