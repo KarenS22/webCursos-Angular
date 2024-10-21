@@ -14,7 +14,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "baseHref": "/webCursos-Angular/",
-"deployUrl": "/webCursos-Angular/",
+            "deployUrl": "/webCursos-Angular/",
             "outputPath": "dist/practica2",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -43,7 +43,7 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kB",
+                  "maximumWarning": "3kB",
                   "maximumError": "4kB"
                 }
               ],
